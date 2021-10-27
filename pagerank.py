@@ -11,14 +11,14 @@ def create_stochastic(adj_list):
         matrix[index][row] = 1/n
   return matrix
 
-def pg(matriks, jml_brs, max_iter):
+def pg(matriks, jml_brs, d, max_iter):
   iter = 0
   t = 1
   matriks = np.array(stochastic)
 
   matriks2 = ([0]*jml_brs)
   for i in range(jml_brs): 
-      matriks2[i] = [1/jml_brs]*1
+      matriks2[i] = [d]*1
   print(matriks2)
 
   while iter < max_iter:
